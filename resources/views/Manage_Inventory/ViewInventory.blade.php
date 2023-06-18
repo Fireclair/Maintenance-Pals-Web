@@ -12,15 +12,22 @@
 <div class="alert alert-primary" role="alert">
   {{session('success')}}
 </div>
+@if(session('hideMessageAfter'))
+      <script>
+         setTimeout(function() {
+            document.querySelector('.alert').style.display = 'none';
+         }, {{ session('hideMessageAfter') * 1000 }});
+      </script>
+   @endif
     @endif  
 
 <div class="row">
     <div class="col-5 ">
         <h1>Manage Inventory</h1>
     </div>
-    <div class="col-6">
-                <a href="Add" class="btn btn-info btn-sm">Add Inventory</a>
-                </div>
+    <div>
+        <a href="Add" class="btn btn-primary" style="background-color: #86d4f5; border: none;"><i class="bx bx-plus me-1"></i>Add Inventory</a>
+     </div>
 
     <div class="card shadow mb-1">
             <div class="card-body">
@@ -46,8 +53,11 @@
                                 <td>{{$inventory->qty}}</td>
                                 <td>{{$inventory->price}}</td>
                                 
-                                <td><a href="datainventory/{{$inventory->id}}/edit">Edit</a></td>
-                                <td><a href="datainventory/{{$inventory->id}}/delete" onclick = "return confirm('Are you sure?')">Delete</a></td>
+                                <td>
+                                <a href="datainventory/{{$inventory->id}}/edit" class="btn btn1" style="background-color: blue; color: white;">Update</a>
+                                </td>
+
+                                <td><a href="datainventory/{{$inventory->id}}/delete" onclick = "return confirm('Are you sure?')" class="btn btn1" style="background-color: red; color: white;">Delete</a></td>
                             </tr>
                             @endforeach
 

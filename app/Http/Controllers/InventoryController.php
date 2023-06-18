@@ -15,7 +15,7 @@ class InventoryController extends Controller
    public function create(Request $request)
    {
       \App\Models\InventoryModel::create($request->all());
-      return redirect('/datainventory')->with('success', 'Data is Added');
+      return redirect('/datainventory')->with('success', 'New Inventory is Added')->with('hideMessageAfter', 1);
    }
 
    public function edit($id)
@@ -28,13 +28,13 @@ class InventoryController extends Controller
    {
       $data_inventory = \App\Models\InventoryModel::find($id);
       $data_inventory->update($request->all());
-      return redirect('/datainventory')->with('success', 'Data is Updated');
+      return redirect('/datainventory')->with('success', 'Product is Updated')->with('hideMessageAfter', 1);
    }
 
    public function delete($id)
    {
       $data_inventory = \App\Models\InventoryModel::find($id);
       $data_inventory->delete($data_inventory);
-      return redirect('/datainventory')->with('success', 'Data is deleted');
+      return redirect('/datainventory')->with('success', 'Product is deleted')->with('hideMessageAfter', 1);
    }
 }
