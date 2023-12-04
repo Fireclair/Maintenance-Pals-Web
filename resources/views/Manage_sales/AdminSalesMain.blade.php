@@ -21,7 +21,7 @@
                         <div class="card-body">
                             <h5 class="card-title">MART REPORT</h5>
                             <p class="card-text">Report for PETAKOM Mart</p>
-                            <a href="/sales-chart" class="btn btn-primary">CLICK HERE</a>
+                            <a href="/sales-chart" class="btn btn-primary">CLICK HERE</a><!-- Redirect to mart report main Page -->
                         </div>
                     </div>
                 </td>
@@ -31,7 +31,7 @@
                         <div class="card-body">
                             <h5 class="card-title">CALCULATE SALES</h5>
                             <p class="card-text">Calculate sales for PETAKOM Mart</p>
-                            <a href="/calcu" class="btn btn-primary">CLICK HERE</a>
+                            <a href="/calcu" class="btn btn-primary">CLICK HERE</a><!-- Redirect to calculate sales Page -->
                         </div>
                     </div>
                 </td>
@@ -42,7 +42,7 @@
                         <div class="card-body">
                             <h5 class="card-title">PAYMENT</h5>
                             <p class="card-text">Payment for Cashier and Vendor</p>
-                            <a href="/paymentmain" class="btn btn-primary">CLICK HERE</a>
+                            <a href="/paymentmain" class="btn btn-primary">CLICK HERE</a><!-- Redirect to payment Page -->
                         </div>
                     </div>
                 </td>

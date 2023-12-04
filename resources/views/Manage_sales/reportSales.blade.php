@@ -3,7 +3,7 @@
 <head>
     <title>Graph Order Report</title>
     <style>
-        /* Define your CSS styles here */
+        /* for styling */
         table {
             border-collapse: collapse;
         }
@@ -25,7 +25,7 @@
         </thead>
         <tbody>
             <?php
-            // Assuming you have an array of daily graph orders named $orders
+            // REPORT SALES
             foreach ($salesreport as $salesreport) {
                 echo "<tr>";
                 echo "<td>" . $orderCounter . "</td>";

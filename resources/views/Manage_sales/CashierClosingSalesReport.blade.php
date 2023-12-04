@@ -8,6 +8,7 @@
         </figure>
 
     </head>
+    <!-- For styling -->
     <style>
 
     .custom-table {
@@ -58,7 +59,7 @@
 
 <body style="margin: 30px;">
 
-
+<!-- Create table -->
     <form action="saleClosing/create" method="post">
         {{ csrf_field() }}
             <table class="custom-table table table-bordered table-sm" id="dataTable" width="100%"
@@ -170,7 +171,7 @@
         </table>
 
 
-        <div class='col-10'>
+        <div class='col-10'><!-- Redirect DATABASE -->
             <button class="btn btn-primary" type="submit">Submit</button>
         </div>
     </form>

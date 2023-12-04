@@ -1,19 +1,22 @@
-<h1>  Payment Main Page</h1>
+<h1> Payment Main Page</h1>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css">
+
 <head>
 
 </head>
+<!-- for styling -->
 <style>
-    body{
-    background-color: #f7f7ff;
-    margin-top:20px;
-}
-.container {
+    body {
+        background-color: #f7f7ff;
+        margin-top: 20px;
+    }
+
+    .container {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        margin-top:20px;
+        margin-top: 20px;
     }
 
     .card {
@@ -46,6 +49,7 @@
     .card-body p {
         text-align: center;
     }
+
     .btn-white {
         background-color: #fff;
         border-color: #e7eaf3;
@@ -68,21 +72,22 @@
     }
 
     .bg-info {
-        background-color: #0dcaf0!important;
+        background-color: #0dcaf0 !important;
     }
 
     .bg-primary {
-        background-color: #008cff!important;
+        background-color: #008cff !important;
     }
 
     .bg-danger {
-        background-color: #fd3550!important;
+        background-color: #fd3550 !important;
     }
 
     .bg-warning {
-        background-color: #ffc107!important;
+        background-color: #ffc107 !important;
     }
-    h1{
+
+    h1 {
         text-align: center;
     }
 </style>

@@ -6,6 +6,8 @@
         <div class = "row justify-content-md-center">
             <div class="col-lg-6">
                 <h1>Add New Stock</h1>
+                <!-- Form to Add new Inventory -->
+
 
                         <form action="/datainventory/create" method="POST">
                             {{csrf_field()}}
@@ -41,6 +43,7 @@
                                     <label for="price" class="form-label">Price</label>
                                     <input type="double" name ="price" class="form-control" id="price" placeholder="Enter Price ">
                                 </div>
+                        <!-- Redirect to View Inventory Page -->
                                 <button type="submit" >Save changes</button>
                         </form>
                     

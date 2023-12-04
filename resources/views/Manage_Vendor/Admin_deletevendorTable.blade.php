@@ -1,6 +1,6 @@
 @extends('layout.master')
 @section('content')
-
+<!-- This is Delete vendor  blade file -->
 <head><!-- Vendor Styling -->
     <style>
         .vendor .sub {

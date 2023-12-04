@@ -13,7 +13,7 @@
         </div>
             @endif
         </div>
-
+        <!-- Form to Update Inventory  -->
         <div class = "row justify-content-md-center">
             <div class="col-lg-6">
             <h1>Update Inventory</h1>
@@ -52,6 +52,7 @@
                                     <input type="double" name ="price" class="form-control" id="price" placeholder="Enter Price " value="{{$data_inventory->price}}">
                                 </div>
 
+                                <!-- Redirect to View Inventory Page -->
                             <button type="submit" class="btn btn-primary float-end">Update</button>
                             </form>
                             </div>

@@ -43,7 +43,7 @@
                     <td>{{ $cashier->quantity_sold_lemon }}</td>
                     <td>{{ $cashier->quantity_sold_wanda }}</td>
                     <td><a href="sales/{{ $cashier->id }}/delete"><button type="button"
-                                onclick="return confirm('Are You Sure?')"> Delete</button> </a></td>
+                                onclick="return confirm('Are You Sure?')"> Delete</button> </a></td><!-- Redirect to MAIN REPORT  Page -->
                 </tr>
             @endforeach
         </table>
@@ -76,12 +76,12 @@
                     <td>{{ $cashier->quantity_sold_soy0 }}</td>
                     <td>{{ $cashier->quantity_sold_lemon0 }}</td>
                     <td>{{ $cashier->quantity_sold_wanda0 }}</td>
-                    <td><a href="sales/{{ $cashier->id }}/delete"><button type="button"
-                                onclick="return confirm('Are You Sure?')"> Delete</button> </a></td>
+                    <td><a href="saless/{{ $cashier->id }}/delete"><button type="button" 
+                                onclick="return confirm('Are You Sure?')"> Delete</button> </a></td><!-- Redirect to MAINS REPORT Page -->
                 </tr>
             @endforeach
         </table>
-
+<!--Create table -->
         <table class="table table-bordered">
 
             <div class="card shadow mb-1">
@@ -155,12 +155,10 @@
             <style>
                 .custom-table {
                     width: 50%;
-                    /* Adjust the width as needed */
                     margin: 0 auto;
-                    /* Center the table horizontally */
                 }
 
-                /* Rename the table */
+                
                 .custom-table thead th:first-child {
                     font-weight: bold;
                 }

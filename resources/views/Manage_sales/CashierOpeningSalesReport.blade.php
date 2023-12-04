@@ -2,68 +2,67 @@
 @section('content')
 
 
-    <head>
-        <meta charset="UTF-8">
-        <figure class="text-center">
-            <h1>OPENING FORM</h1>
-        </figure>
+<head>
+    <meta charset="UTF-8">
+    <figure class="text-center">
+        <h1>OPENING FORM</h1>
+    </figure>
 
-    </head>
-    <style>
+</head>
+<!-- for styling -->
+<style>
+    .custom-table {
+        width: 100%;
+    }
 
+    .custom-table thead th {
+        background-color: blue;
+        color: white;
+        font-weight: bold;
+    }
 
-.custom-table {
-    width: 100%;
-}
+    .custom-table tbody tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
 
-.custom-table thead th {
-    background-color: blue;
-    color: white;
-    font-weight: bold;
-}
+    .custom-table tbody tr:hover {
+        background-color: #e9e9e9;
+    }
 
-.custom-table tbody tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
+    .row-in-form {
+        margin-bottom: 0;
+    }
 
-.custom-table tbody tr:hover {
-    background-color: #e9e9e9;
-}
+    .card {
+        margin-bottom: 1rem;
+    }
 
-.row-in-form {
-    margin-bottom: 0;
-}
+    .card-body {
+        padding: 1rem;
+    }
 
-.card {
-    margin-bottom: 1rem;
-}
+    .btn-primary {
+        background-color: blue;
+        border-color: blue;
+    }
 
-.card-body {
-    padding: 1rem;
-}
+    .btn-primary:hover {
+        background-color: #0069d9;
+        border-color: #0069d9;
+    }
 
-.btn-primary {
-    background-color: blue;
-    border-color: blue;
-}
-
-.btn-primary:hover {
-    background-color: #0069d9;
-    border-color: #0069d9;
-}
-
-.col-10 {
-    margin-top: 10px;
-    text-align: center;
-}
+    .col-10 {
+        margin-top: 10px;
+        text-align: center;
+    }
 </style>
+
 <body style="margin: 30px;">
 
 
     <form action="/sales/create" method="post" id="openSales">
         {{ csrf_field() }}
-        <table class="custom-table table table-bordered table-sm" id="dataTable" width="100%"
-            cellspacing="5">
+        <table class="custom-table table table-bordered table-sm" id="dataTable" width="100%" cellspacing="5">
             <div class="card shadow mb-1">
                 <div class="card-body">
                     <div class="table-responsive">
@@ -83,8 +82,7 @@
                                     <td>
                                         <p class="row-in-form">
 
-                                            <input id="quantity" type="number" name="quantity_sold_bread" value=""
-                                                placeholder="Quantity">
+                                            <input id="quantity" type="number" name="quantity_sold_bread" value="" placeholder="Quantity">
                                         </p>
                                     </td>
 
@@ -95,8 +93,7 @@
                                     <td>
                                         <p class="row-in-form">
 
-                                            <input id="quantity" type="number" name="quantity_sold_biscut" value=""
-                                                placeholder="Quantity">
+                                            <input id="quantity" type="number" name="quantity_sold_biscut" value="" placeholder="Quantity">
                                         </p>
                                     </td>
                                 </tr>
@@ -106,8 +103,7 @@
                                     <td>
                                         <p class="row-in-form">
 
-                                            <input id="quantity" type="number" name="quantity_sold_water" value=""
-                                                placeholder="Quantity">
+                                            <input id="quantity" type="number" name="quantity_sold_water" value="" placeholder="Quantity">
                                         </p>
                                     </td>
                                 </tr>
@@ -117,8 +113,7 @@
                                     <td>
                                         <p class="row-in-form">
 
-                                            <input id="quantity" type="number" name="quantity_sold_lychee" value=""
-                                                placeholder="Quantity">
+                                            <input id="quantity" type="number" name="quantity_sold_lychee" value="" placeholder="Quantity">
                                         </p>
                                     </td>
                                 </tr>
@@ -128,8 +123,7 @@
                                     <td>
                                         <p class="row-in-form">
 
-                                            <input id="quantity" type="number" name="quantity_sold_milo" value=""
-                                                placeholder="Quantity">
+                                            <input id="quantity" type="number" name="quantity_sold_milo" value="" placeholder="Quantity">
                                         </p>
                                     </td>
                                 </tr>
@@ -139,8 +133,7 @@
                                     <td>
                                         <p class="row-in-form">
 
-                                            <input id="quantity" type="number" name="quantity_sold_soy" value=""
-                                                placeholder="Quantity">
+                                            <input id="quantity" type="number" name="quantity_sold_soy" value="" placeholder="Quantity">
                                         </p>
                                     </td>
                                 </tr>
@@ -150,8 +143,7 @@
                                     <td>
                                         <p class="row-in-form">
 
-                                            <input id="quantity" type="number" name="quantity_sold_lemon" value=""
-                                                placeholder="Quantity">
+                                            <input id="quantity" type="number" name="quantity_sold_lemon" value="" placeholder="Quantity">
                                         </p>
                                     </td>
                                 </tr>
@@ -160,8 +152,7 @@
                                     <td>Wanda coffee can</td>
                                     <td>
                                         <p class="row-in-form">
-                                            <input id="quantity" type="number" name="quantity_sold_wanda" value=""
-                                                placeholder="Quantity">
+                                            <input id="quantity" type="number" name="quantity_sold_wanda" value="" placeholder="Quantity">
                                         </p>
                                     </td>
                                 </tr>
@@ -171,10 +162,9 @@
         </table>
 
         <div class='col-10' style="width: 100%; text-align: center;">
-            <button class="btn btn-primary" type="submit">Submit</button>
+            <button class="btn btn-primary" type="submit">Submit</button><!-- Redirect to calculate sales Page -->
         </div>
     </form>
 
 </body>
 @endsection
-

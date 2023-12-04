@@ -1,5 +1,6 @@
 @extends('layout.master')
 @section('content')
+<!-- This is Table list vendor  blade file -->
 <section id="resume" class="resume">
     <div class="container">
 

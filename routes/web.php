@@ -36,6 +36,7 @@ Route::get('/Home', function () {
 return view('Mainpage');
 });
 
+//<!-- Start Vendor Routing -->
 Route::get
 ('/add', function () {
     return view('Manage_Vendor.Admin_addvendorTable');
@@ -49,8 +50,13 @@ Route::get('/vendor/{id}/delete/page','App\Http\Controllers\Vendor_Controller@re
 
 Route::get('/vendor','App\Http\Controllers\Vendor_Controller@index');
 
+Route::post('/vendor/{id}/update', 'App\Http\Controllers\Vendor_Controller@update');
+
 Route::get('/vendor/{id}/delete','App\Http\Controllers\Vendor_Controller@destroy');
 
+//<!-- End Vendor Routing -->
+
+//<!-- Start Inventory Routing -->
 
 Route::get('/Add', function () {
     return view('/Manage_Inventory.Admin_AddInventory');
@@ -65,6 +71,9 @@ Route::get('/datainventory/{id}/edit', 'App\Http\Controllers\InventoryController
 Route::post('/datainventory/{id}/update', 'App\Http\Controllers\InventoryController@update');
 
 Route::get('/datainventory/{id}/delete', 'App\Http\Controllers\InventoryController@delete');
+
+//<!-- End Inventory Routing -->
+
 Route::get('/calcu', [CashierController::class, 'index']);
 Route::post('/calcu/create', [ReportController::class, 'create']);
 
@@ -81,7 +90,7 @@ Route::get('/items/{id}/edit', 'ItemController@edit')->name('items.edit');
 
 Route::post('/sales/create', [CashierController::class, 'create']);
 Route::get('/sales/{id}/delete', [CashierController::class, 'delete']);
-
+Route::get('/saless/{id}/delete', [CashierController::class, 'deletec']);
 Route::get('/cashieropening', function () {
     return view('Manage_sales.CashierOpeningSalesReport');
 });

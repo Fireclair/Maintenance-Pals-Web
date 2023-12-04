@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-
+//<!-- cashier Closing Table -->
 class CashierClosingModel extends Model
 {
     use HasFactory;

@@ -1,6 +1,6 @@
 @extends('layout.master')
 @section('content')
-
+<!-- This is Add new vendor table blade file -->
 <head><!-- Vendor Styling -->
   <style> 
     .vendor .sub {

@@ -8,6 +8,7 @@
         </figure>
 
     </head>
+    <!-- For styling -->
     <style>
         body {
             margin-top: 20px;
@@ -37,7 +38,7 @@
                     <div class="card-body">
                         <h5 class="card-title">OPENING SALES FORM</h5>
                         <p class="card-text">Opening sales for PETAKOM Mart</p>
-                        <a href="/cashier" class="btn btn-primary">CLICK HERE</a>
+                        <a href="/cashier" class="btn btn-primary">CLICK HERE</a><!-- Redirect to OPENING FORM Page -->
                     </div>
                 </div>
             </td>
@@ -47,7 +48,7 @@
                     <div class="card-body">
                         <h5 class="card-title">CLOSING SALES FORM</h5>
                         <p class="card-text">Closing sales for PETAKOM Mart</p>
-                        <a href="/cashierclosing" class="btn btn-primary">CLICK HERE</a>
+                        <a href="/cashierclosing" class="btn btn-primary">CLICK HERE</a><!-- Redirect to CLOSING FORM Page -->
                     </div>
                 </div>
             </td>

@@ -1,6 +1,6 @@
 @extends('layout.master')
 @section('content')
-
+<!-- This is Edit vendor  blade file -->
 <head> <!-- Vendor Styling -->
     <style>
         .vendor .sub {
