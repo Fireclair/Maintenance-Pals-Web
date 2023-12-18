@@ -16,8 +16,9 @@ return new class extends Migration
             $table->string('PCode');
             $table->string('PName');
             $table->string("Description");
-            $table->integer('qty')->default(0);
+            $table->integer('qty');
             $table->decimal('price', 10, 2)->nullable();
+            $table->decimal('t_price', 10, 2)->nullable();
             $table->timestamps();
         });
     }

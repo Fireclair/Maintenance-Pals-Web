@@ -110,7 +110,7 @@
         <div class="row">
             <div class="col-lg-14 mt-5 mt-lg-0 d-flex align-items-stretch">
                 <div class="sub">
-                    <form action="/vendor/{[$vendor_data->id}}/update" method="POST" class="sub"> <!-- Edit vendor form -->
+                    <form action="/vendor/{{ $vendor_data->id }}/update" method="POST" class="sub"> <!-- Edit vendor form -->
                         {{csrf_field()}}
                         <div class="row">
                             <div class="form-group col-md-6">

@@ -12,6 +12,7 @@
             padding: 5px;
         }
     </style>
+    
 </head>
 <body>
     <h1>Graph Order Report - Daily</h1>

@@ -32,6 +32,7 @@ class InventoryController extends Controller
    public function update(Request $request, $id)
    {
       $data_inventory = \App\Models\InventoryModel::find($id);
+      
       $data_inventory->update($request->all());
       return redirect('/datainventory')->with('success', 'Product is Updated')->with('hideMessageAfter', 1);
    }

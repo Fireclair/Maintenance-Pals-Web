@@ -8,18 +8,7 @@
 
 <div class = 'container'>
 
-@if(session('success'))
-<div class="alert alert-primary" role="alert">
-  {{session('success')}}
-</div>
-@if(session('hideMessageAfter'))
-      <script>
-         setTimeout(function() {
-            document.querySelector('.alert').style.display = 'none';
-         }, {{ session('hideMessageAfter') * 1000 }});
-      </script>
-   @endif
-    @endif  
+
 
 <div class="row">
     <div class="col-5 ">
@@ -40,7 +29,8 @@
                                 <th>Product Name</th>
                                 <th>Company</th>
                                 <th>Quantity</th>
-                                <th>Price</th>
+                                <th>Unit Price</th>
+                                <th>Total Price</th>
                             </tr>
                         </thead>
                         <!-- Data from add Inventory Display here -->
@@ -53,6 +43,7 @@
                                 <td>{{$inventory->Description}}</td>
                                 <td>{{$inventory->qty}}</td>
                                 <td>{{$inventory->price}}</td>
+                                <td>{{$inventory->t_price}}</td>
 
                         <!-- Butoon to go to Edit Inventory Page -->    
                                 <td>

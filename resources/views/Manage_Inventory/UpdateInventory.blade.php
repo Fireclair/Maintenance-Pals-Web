@@ -17,7 +17,7 @@
         <div class = "row justify-content-md-center">
             <div class="col-lg-6">
             <h1>Update Inventory</h1>
-        <form action="/datainventory/{{$data_inventory->id}}/update" method="POST">
+        <form action="/datainventory/{{ $data_inventory->id }}/update" method="POST">
                         {{csrf_field()}}
                         <div class="mb-3">
                                     <label for="PCode" class="form-label">Product Code</label>

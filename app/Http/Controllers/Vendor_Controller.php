@@ -35,7 +35,6 @@ class Vendor_Controller extends Controller
    {
     $vendor_data = \App\Models\Vendor_Model::find($id);
     $vendor_data->update($request->all());
-    dd($vendor_data);
      return redirect('vendor')->with('success', 'Vendor is Updated');
    }
 //<!-- Delete function -->
